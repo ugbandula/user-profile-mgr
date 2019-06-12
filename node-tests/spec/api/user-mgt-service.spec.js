@@ -15,7 +15,7 @@ let testConditionNo = 1;
 let currentTime = null;
 
 /**
- * Event data cache management API test definitions
+ * User profile data cache management API test definitions
  */
 describe('TEST USER MGT SERVICE TESTS', function () {
     this.timeout(10000);

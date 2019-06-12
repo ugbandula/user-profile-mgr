@@ -5,6 +5,8 @@
     "main": "app.js",
     "scripts": {
         "start": "node --harmony --use_strict ./app/bin/www.js user-profile",
+        "test": "jasmine",
+        "karma-test": "karma start karma.conf.js --browsers Chrome --single-run",
         "api-test": "mocha node-tests/spec/api/**/*spec.js  -R spec"
     },
     "keywords": [
@@ -53,5 +55,12 @@
         "request": "^2.88.0",
         "serve-favicon": "^2.3.2",
         "winston": "^2.4.4"
+    },
+    "devDependencies": {
+        "jasmine": "^3.4.0",
+        "karma": "^4.1.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-firefox-launcher": "^1.1.0",
+        "karma-jasmine": "^2.0.1"
     }
 }

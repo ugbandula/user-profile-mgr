@@ -14,6 +14,8 @@ npm start
 # to run the API tests
 npm api-test
 
+# to run unit tests
+npm run karma-test
 
 ```
 
