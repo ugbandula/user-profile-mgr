@@ -1,0 +1,116 @@
+{
+  "name": "user-profile",
+  "version": "0.0.1",
+  "description": "Spatial Vision User Profile Mgt",
+  "main": "app/public/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "appPath": "app",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-ui-router": "^0.2.12",
+    "angular-bootstrap": "^1.1.2",
+    "angular-mocks": "latest",
+    "ui-leaflet": "latest",
+    "angular-simple-logger": "latest",
+    "leaflet-dist": "latest",
+    "leaflet-plugins": "latest",
+    "leaflet-fullscreen-bower": "latest",
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "fontawesome": "~4.5.0",
+    "metisMenu": "~2.4.0",
+    "animate.css": "https://github.com/daneden/animate.css.git#~3.2.0",
+    "angular-notify": "*",
+    "sweetalert": "^1.1.3",
+    "moment": "^2.13.0",
+    "angular-sanitize": "^1.5.6",
+    "angular-animate": "^1.5.6",
+    "leaflet.markercluster": "^0.5.0",
+    "Leaflet.awesome-markers": "leaflet.awesome-markers#^2.0.2",
+    "vis": "^4.16.1",
+    "angular-visjs": "^4.0.2",
+    "angular-ui-grid": "latest"
+  },
+  "resolutions": {
+    "angular": "^1.5.6",
+    "vis": "~4.2.0"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "./angular.js"
+      ]
+    },
+    "angular-animate": {
+      "main": [
+        "./angular-animate.min.js"
+      ]
+    },
+    "angular-notify": {
+      "main": [
+        "./dist/angular-notify.min.js",
+        "./dist/angular-notify.min.css"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "./css/font-awesome.min.css",
+        "./fonts/*.*"
+      ]
+    },
+    "metisMenu": {
+      "main": [
+        "./dist/metisMenu.min.js",
+        "./dist/metisMenu.min.css"
+      ]
+    },
+    "sweetalert": {
+      "main": [
+        "./dist/sweetalert.min.js",
+        "./dist/sweetalert.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "./dist/jquery.min.js"
+      ]
+    },
+    "moment": {
+      "main": [
+        "./min/moment.min.js"
+      ]
+    },
+    "angular-sanitize": {
+      "main": [
+        "./angular-sanitize.min.js"
+      ]
+    },
+    "angular-ui-router": {
+      "main": [
+        "./release/angular-ui-router.min.js"
+      ]
+    },
+    "angular-bootstrap": {
+      "main": [
+        "./ui-bootstrap.min.js",
+        "./ui-bootstrap-tpls.min.js"
+      ]
+    },
+    "angular-simple-logger": {
+      "main": [
+        "./dist/angular-simple-logger.min.js"
+      ]
+    }
+  }
+}

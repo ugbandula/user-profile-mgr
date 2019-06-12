@@ -1,0 +1,63 @@
+<div id="UserProfileView">
+    <hr>
+
+    <div class="dahboard-round-button">
+        <div>View User Profile</div>
+        <!--<span style="color: #9ea900">1 new alert</span>-->
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Name</h4>
+            <div>
+                <span>{{userProfile.name}}</span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Email</h4>
+            <div>
+                <span>{{userProfile.email}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Date of Birth</h4>
+            <div>
+                <span>{{userProfile.dateOfBirth}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12" ng-if="!isEmptyProfile()">
+            <h4>Location</h4>
+            <div style="margin-bottom: 10px">
+                <span><b>Address:</b> {{userProfile.location.address}}</span>
+                <div><b>Coordinates</b></div>
+                <span>Latitude: {{userProfile.location.lat}}</span>
+                <span>Laongitude: {{userProfile.location.long}}</span>
+            </div>
+
+            <!--<div  id="MapScope">-->
+                <!--<div>-->
+                    <!--<leaflet lf-center="berwick" event-broadcast="events" markers="markers" height="250px" width="100%"></leaflet>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="col-lg-12" ng-if="isEmptyProfile()">
+            <h3>User profile does not exist!</h3>
+            <h4>Please create a new profile.</h4>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row" style="padding: 15px;">
+        <button class="submit-button" ui-sref="manage-user">
+            <span ng-if="isEmptyProfile()">Create a Profile</span>
+            <span ng-if="!isEmptyProfile()">Edit Profile</span>
+        </button>
+    </div>
+
+</div>
