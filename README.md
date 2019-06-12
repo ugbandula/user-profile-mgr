@@ -1,4 +1,4 @@
-# Developer Programming Challenge
+# User Profile Manager
 
 This is a sample application which allows a user to create a user profile and saves into a persistent cache/localstorage.
 
