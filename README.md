@@ -1,4 +1,4 @@
-# User Profile Manager
+# Developer Programming Challenge
 
 This is a sample application which allows a user to create a user profile and saves into a persistent cache/localstorage.
 
@@ -10,6 +10,9 @@ npm install
 
 # to run the project
 npm start
+
+# to run the API tests
+npm api-test
 
 
 ```
